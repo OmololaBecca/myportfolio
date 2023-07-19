@@ -302,6 +302,8 @@ padding:40px;
         top:90px;
         right:10px;
         left:10px;
+        display:block;
+        margin:auto;
 
     }
 
@@ -325,15 +327,14 @@ padding:40px;
     }
     .about-page{
     flex-direction: column;
-        gap:0px;
-        margin:0px 10px 0px 23px ;
-    }
-
-    .about-introduction h1{
-        font-size:26px;
     }
  .about-image{
     width:330px;
+    display:block;
+    margin:auto;
+}
+.about-introduction {
+    padding:0px 5px;
 }
 .about-introduction h1{
     font-size:52px;
