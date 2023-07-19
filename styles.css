@@ -51,13 +51,13 @@ padding:40px;
 
 .hero-page{
     display:flex;
-    gap:50px;
+    gap:60px;
 }
 .introduction-div{
      margin-top: 65px;
     margin-left: 50px;
     text-align: left;
-    width:700px;
+    width:690px;
 }
 .introduction-div p{
     font-size: 19px;
@@ -67,7 +67,7 @@ padding:40px;
     font-weight: 700;
 }
 .hero-page-image{
-    width:650px;
+    width:640px;
     position:fixed;
     top:0;
     right:0;
