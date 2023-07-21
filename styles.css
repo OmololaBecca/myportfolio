@@ -9,17 +9,26 @@ body{
     color:rgb(55, 53, 53);
 
 }
-.giphy-embed{
-    background: #f1f1f1 !important;
-    z-index: 9999;
+.dark-mode{
+    background-color: #000;
+    color:#f1f1f1;
+}
+.light-mode{
+    background-color: #ffff;
+    color:rgb(55, 53, 53);
+}
 
+.mode-icon-div{
+    position:absolute; 
+    left:800px;
+    top:45px;   
 }
 .icons{
     font-size: 23px;
 }
-.nav-toggle{
+  .nav-toggle{
     margin:40px 0px 0px 45px;
-}
+}  
 .navbar-div{
     display:flex;
     gap:35px;
@@ -28,7 +37,6 @@ body{
   font-size: 26px;
 padding:40px;
 }
-
 
 .navigation-image{
     width:100px;
@@ -40,14 +48,16 @@ padding:40px;
 .navigation a{
     color:#000;
 }
+.dark-mode .navigation a{
+    color: #FFF;
+}
 .navigation a:hover{
-    color:rgb(222, 115, 115);
+    color:rgb(222, 115, 115) !important;
 }
 
 .hidden{
     display:none !important;
 }
-
 
 .hero-page{
     display:flex;
@@ -68,6 +78,8 @@ padding:40px;
 }
 .hero-page-image{
     width:640px;
+    height:100vh;
+    object-fit: cover;
     position:fixed;
     top:0;
     right:0;
@@ -81,6 +93,9 @@ padding:40px;
 }
 .hero-page-icons a{
     color:#000;
+}
+.dark-mode .hero-page-icons a{
+    color:#ffff;
 }
 
 .about-page{
@@ -119,7 +134,11 @@ padding:40px;
     height:530px;
     box-shadow: 5px 5px 5px 5px  #f1f1f1;
     margin-bottom: 60px;
-    padding:15px;
+    padding:18px;
+}
+.dark-mode .project-card{
+    box-shadow: 1px 1px 1px 1px  #111010;
+
 }
 
 .project-image{
@@ -166,24 +185,18 @@ padding:40px;
     justify-content: center;
 
 }
+/* THE RESPONSIVE SECTION */
 @media(max-width:1450px){
+    .mode-icon-div{
+        left:700px;
+    }
     .icons{
         font-size: 23px;
     }
     .hero-page-image{
         width:600px;
-
     }
-    /* .introduction-div h1{
-        font-size: 80px;
-        font-weight: 700;
-    }
- */
-
-/* .about-image{
-    width:500px;
-    margin-top: 30px;
-} */
+    
 .about-introduction h1{
     font-size:70px;
 }
@@ -207,6 +220,9 @@ padding:40px;
 }
 
 @media(max-width:1350px){
+    .mode-icon-div{
+        left:600px;
+    }
 
     .icons{
         font-size: 22px;
@@ -217,16 +233,20 @@ padding:40px;
    }
    .hero-page-image{
     width:500px;
+    height:100vh;
+        object-fit: cover;
 }
 }
 
 
 @media (max-width:1200px){
     .icons{
-        font-size: 10px;
+        font-size: 20px;
     }
     .hero-page-image{
         width:430px;
+        height:100vh;
+        object-fit: cover;
     }
     .introduction-div{
         margin-top: 50px;
@@ -261,12 +281,14 @@ padding:40px;
 
 
 @media(max-width:1000px){
+    .mode-icon-div{
+        left:550px;
+    }
 
     .icons{
         font-size: 20px;
     }
     .introduction-div{
-        /* margin-top: 50px; */
        width:530px;
    }
    .introduction-div h1{
@@ -278,11 +300,13 @@ padding:40px;
 }
 
 @media(max-width:600px){
-
+    .mode-icon-div{
+        left:450px;
+        top:30px; 
+    }
 .navbar-div{
     gap:25px;
   font-size: 15px;
-/* padding:40px; */
 }
 .navigation-image{
     width:70px;
@@ -351,7 +375,7 @@ padding:40px;
 }
 .project-card{
     width:400px;
-    height:490px;
+    height:450px;
     border-radius: 5px;
 }
 .ace-cosmetics-main{
@@ -363,7 +387,7 @@ padding:40px;
 }
 
 .project-image{
-    width:300px;
+    width:400px;
     }
     .project-text{
         font-size:30px;

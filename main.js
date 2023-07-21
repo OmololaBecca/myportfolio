@@ -4,7 +4,8 @@
 
 
 const barIconToggle= document.getElementById('barIcon');
-// const timesIconToggle = document.getElementById('timesIcon');
+ const modeIcon = document.getElementById('modeIcon');
+ const bodyElement = document.getElementById('body-element');
   const navlist = document.getElementById('navList');
   const selectedNav = document.querySelectorAll(".navigation")
   const aboutSection= document.getElementById('about');
@@ -15,6 +16,8 @@ const barIconToggle= document.getElementById('barIcon');
   const pictureNav= document.getElementById('homeImgNav');
   const copyrightFooter = document.getElementById("copyright-footer")
       const preloader = document.getElementById("preloader")
+
+    
 
   function addToggle(){
      navlist.classList.add('clicked')
@@ -51,8 +54,37 @@ const barIconToggle= document.getElementById('barIcon');
     }
 
    })
-// barIconToggle.addEventListener('click',addToggle)
-// timesIconToggle.addEventListener('click',removeToggle)
+
+
+   function darkMode(){
+    modeIcon.classList.add('clicked')
+    modeIcon.classList.add('fa-sun')
+    modeIcon.classList.remove('fa-moon')
+    bodyElement.classList.add('dark-mode') 
+    bodyElement.classList.remove('light-mode') 
+   
+   }
+
+   function lightMode(){
+    modeIcon.classList.remove('clicked')
+    modeIcon.classList.add('fa-moon')
+    modeIcon.classList.remove('fa-sun')
+    bodyElement.classList.remove('dark-mode') 
+    bodyElement.classList.add('light-mode')
+
+   
+
+       }
+
+       modeIcon.addEventListener('click',()=>{
+        const isClicked = modeIcon.classList.contains('clicked')
+
+        if (isClicked){
+          lightMode()
+        }else{
+          darkMode()
+        }
+       })
    
       for(let navs=0; navs < selectedNav.length; navs++){
         selectedNav[navs].addEventListener('click',e=>{
@@ -64,7 +96,7 @@ const barIconToggle= document.getElementById('barIcon');
       skillSection.classList.add('hidden')
       contactSection.classList.add('hidden')
       navlist.classList.add ('hidden')
-        }else if(clickedNav == "WORK"){
+        }else if(clickedNav == "WORKS"){
           aboutSection.classList.add('hidden')
       workSection.classList.remove('hidden')
       skillSection.classList.add('hidden')
@@ -83,18 +115,18 @@ const barIconToggle= document.getElementById('barIcon');
       skillSection.classList.add('hidden')
       navlist.classList.add ('hidden')
          }else{
-          clickedNav.classList.add('hidden')
+          clickedNav.classList.remove('hidden')
          }
 
       }) 
       }
 
       
-      setTimeout(function preloaderTimeOut (){
-          preloader.style = "display: none"
-      }, 3000)
+      // setTimeout(function preloaderTimeOut (){
+      //     preloader.style = "display: none"
+      // }, 3000)
       
-      copyrightFooter.innerHTML = "© " + new Date().getFullYear() + " OmololaBeccaOlaoye"
+      // copyrightFooter.innerHTML = "© " + new Date().getFullYear() + " OmololaBeccaOlaoye"
 
 // when looping through a List(they children are not together in a container),its proper that you call everychild,so the logic can take event on each child
 // for(let arrowSelected = 0; arrowSelected < arrowDisplay.length; arrowSelected++){
