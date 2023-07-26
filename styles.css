@@ -19,16 +19,16 @@ body{
 }
 
 .mode-icon-div{
-    position:absolute; 
+    position:absolute;
     left:800px;
-    top:45px;   
+    top:45px;
 }
 .icons{
     font-size: 23px;
 }
   .nav-toggle{
     margin:40px 0px 0px 45px;
-}  
+}
 .navbar-div{
     display:flex;
     gap:35px;
@@ -47,7 +47,7 @@ animation:wheel-navbar-div 1.3s linear ;
     100%{
         transform:translateX(0px);
         opacity: 1;
-    } 
+    }
 }
 
 .navigation-image{
@@ -74,8 +74,8 @@ animation:wheel-navbar-div 1.3s linear ;
 .hero-page{
     display:flex;
     gap:60px;
-  
-    
+
+
 }
 
 .introduction-div{
@@ -83,8 +83,6 @@ animation:wheel-navbar-div 1.3s linear ;
     margin-left: 50px;
     text-align: left;
     width:690px;
-   
-
 }
 
 .introduction-div p{
@@ -103,7 +101,7 @@ animation:wheel-navbar-div 1.3s linear ;
     100%{
         transform:translateX(0px);
         opacity: 1;
-    } 
+    }
 }
 
 
@@ -119,7 +117,7 @@ animation:wheel-navbar-div 1.3s linear ;
     100%{
         transform:translateY(0px);
         opacity: 1;
-    } 
+    }
 }
 
 .hero-page-second-p{
@@ -134,7 +132,7 @@ animation:wheel-navbar-div 1.3s linear ;
     100%{
         transform:translateY(0px);
         opacity: 1;
-    } 
+    }
 }
 .hero-page-image{
     width:640px;
@@ -161,7 +159,7 @@ animation:wheel-navbar-div 1.3s linear ;
     100%{
         transform:translateX(0px);
         opacity: 1;
-    } 
+    }
 }
 .hero-page-icons a{
     color:#000;
@@ -182,11 +180,11 @@ animation:wheel-about-introduction 1s linear ;
 
 @keyframes wheel-about-introduction {
     0%{
-        transform:translateY(100px);  
+        transform:translateY(100px);
     }
     100%{
         transform:translateY(0px);
-    } 
+    }
 }
 
 .about-introduction h1{
@@ -207,11 +205,11 @@ animation:wheel-about-introduction 1s linear ;
 
 @keyframes wheel-work-main-div {
     0%{
-        transform:translateY(100px);  
+        transform:translateY(100px);
     }
     100%{
         transform:translateY(0px);
-    } 
+    }
 }
 
 .project-text{
@@ -296,7 +294,7 @@ animation:wheel-about-introduction 1s linear ;
     .hero-page-image{
         width:600px;
     }
-    
+
 .about-introduction h1{
     font-size:70px;
 }
@@ -380,7 +378,7 @@ animation:wheel-about-introduction 1s linear ;
 }
 
 
-@media(max-width:1000px){
+@media(max-width:1024px){
     .mode-icon-div{
         left:550px;
     }
@@ -395,14 +393,14 @@ animation:wheel-about-introduction 1s linear ;
     font-size: 70px;
 }
    .hero-page-image{
-    width:350px;
+    width:330px;
 }
 }
 
 @media(max-width:600px){
     .mode-icon-div{
-        left:450px;
-        top:30px; 
+        left:320px;
+        top:30px;
     }
 .navbar-div{
     gap:25px;
@@ -416,11 +414,11 @@ animation:wheel-about-introduction 1s linear ;
         font-size: 18px;
     }
     .nav-toggle{
-        margin:30px 0px 0px 28px;
+        margin:30px 0px 0px 15px;
     }
     .hero-page-image{
-        width:350px;
-        height:350px;
+        width:320px;
+        height:320px;
         object-fit: cover;
          position:absolute;
         top:90px;
@@ -433,7 +431,7 @@ animation:wheel-about-introduction 1s linear ;
 
     .introduction-div{
         margin-top: 370px;
-       width:600px;
+       width:400px;
        margin-left: 20px;
        padding:0px 10px;
    }
@@ -454,7 +452,7 @@ animation:wheel-about-introduction 1s linear ;
     margin:20px 20px 10px 20px ;
     }
  .about-image{
-    width:320px;
+    width:290px;
     display:block;
     margin:auto;
 }
@@ -469,32 +467,34 @@ animation:wheel-about-introduction 1s linear ;
     font-size:17px;
 }
 .projects-div{
-    gap:20px;
-    padding:0px 30px 30px 30px;
+   margin-bottom: 30px;
+   gap:10px;
 
 }
 .project-card{
-    width:400px;
-    height:450px;
+    width:330px;
+    height:480px;
     border-radius: 5px;
+    padding:10px 20px 20px 20px;
 }
+
 .ace-cosmetics-main{
     height:440px;
     margin-bottom: 30px;
 }
 .slc-main{
-    height:410px;
+    height:400px;
 }
 
 .project-image{
-    width:400px;
+    width:310px;
     }
     .project-text{
         font-size:30px;
     }
 
 .contact-text{
-    width:350px;
+    width:330px;
     padding: 0px 12px;
 }
 .contact-page h1{
